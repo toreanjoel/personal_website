@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <title>Terminal</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" media="screen" />
+  </head>
+  <body>
+  <div id="homepage" class="middle">
+    <div id="terminal">
+      <div>
+        <div id="controls" class="middle"><span></span><span></span><span></span><div class="taille"></div></div>
+        <div>Terminal</div>
+      </div>
+      <div id="terminal-content">
+        Terminal of <a href="https://bitbucket.org/torean_joel/" target="_blank">Torean "Trojan_Morse" Joel</a> - Welcome. Type 'help' to get started
+        <div class="content-history"></div>
+        <div class="terminal-content__user-interaction">
+          <form id="terminal-content__form">
+            <div class="terminal-content__info"></div>
+            <input type="text" onblur="this.focus()" autofocus class="terminal--input" autofocus />
+          </form>
+        </div>                      
+      </div>
+    </div>
+  </div>
+  </body>
+  <script src="./js/constants.js"></script>
+  <script src="./js/commands.js"></script>
+  <script src="./js/helpers.js"></script>
+  <script src="./js/main.js"></script>
+</html>
