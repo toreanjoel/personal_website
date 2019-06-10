@@ -4,7 +4,7 @@
 
  // the default agent and user connecting
 const USER = 'GUEST';
-const AGENT = 'TrojanMorse.hq';
+const AGENT = 'Trojan_M[0]rse.hq';
 
 // using var as we are sharinf consts and lets inits in the variables here
 var DOM = {

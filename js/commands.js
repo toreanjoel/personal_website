@@ -3,9 +3,13 @@
  */
 
 const COMMANDS = {
-  presentation: {
-    cmd: 'presentation',
-    res: 'This will contain method to show content'
+  about: {
+    cmd: 'about',
+    res: 'About ȚŖÖĴÄŅ_M[0]ŖŚË comes here'
+  },
+  contact: {
+    cmd: 'contact',
+    res: 'Send me a message using the following format: <br />contact "youremail@address.here" "your message here"'
   },
   ping: {
     cmd: 'ping',
@@ -17,9 +21,6 @@ const COMMANDS = {
   },
   help: {
     cmd: 'help',
-    res: 'Below are a list of current supported commands: <br/> presentation - Random data <br/> presentation<br/> test<br/> test<br/> test<br/> test'
+    res: 'Below are a list of current supported commands: <br/> about - information about me <br/> contact - send me a mail<br/> ping - check that the terminal is working<br/> whoami - get your browser info'
   },
-  visitors : { cmd: 'visitors', res: '<span class="blue">2626</span> visites'},
-  hello: { cmd: 'hello', res: 'HI' },
-  date: { cmd: 'date', res: 'current date'}
 }
