@@ -21,3 +21,13 @@ const DEFAULT = {
   TERMINAL_INFO:
     `${'<span class="green">' + AGENT + '</span> <span class="yellow"> (' + USER + ')</span> <span class="red">#</span>'}`,
 }
+
+// email responses
+const emailMessage = {
+  success: function(user) {
+    return `Thank you ${user}, you mail was successfully sent`
+  },
+  error: function(user, errors) {
+    return `Sorry ${user}, something went wrong. <br/> ${errors}`
+  }
+}

@@ -11,7 +11,13 @@ DOM.TERMINAL_FORM.addEventListener('submit', (event) => {
   event.preventDefault();
   try {
     if(DOM.TERMINAL_FORM_INPUT.value.trim() !== '') {
-      launchCommand(COMMANDS[DOM.TERMINAL_FORM_INPUT.value]);
+      // here we need to check if they are looking for help or invoking
+      const commandTyped = DOM.TERMINAL_FORM_INPUT.value;
+      if(commandTyped.split(" ")[1] === 'help') {
+        launchCommand(COMMAND_HELP[commandTyped.split(" ")[0]]);
+      } else {
+        launchCommand(COMMANDS[DOM.TERMINAL_FORM_INPUT.value]);
+      }
     }
   } catch(error) {
     launchCommand({
