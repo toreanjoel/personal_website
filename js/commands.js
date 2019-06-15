@@ -10,9 +10,6 @@ const COMMANDS = {
     res: HTML_TEMPLATE.ABOUT,
   },
   contact: {
-    /**
-     * https://www.smtpjs.com/
-     */
     cmd: 'contact',
     res: HTML_TEMPLATE.NEED_PARAMETERS,
     method: EMAIL.send,
@@ -42,15 +39,15 @@ const COMMAND_HELP = {
   },
   contact: {
     cmd: 'contact help',
-    res: 'To use the contact command, use the following exmaple:<br/><br/><strong>contact your@email.domain \'Your message comes here\'</strong><br/><br/><i>Note the quotation marks around the message</i>'
+    res: 'To use the contact command, use the following exmaple:<br/><br/><strong>contact your@email.domain \'Your message\'</strong><br/><br/><i>Note the quotation marks around the message</i>'
   },
   feed: {
     cmd: 'feed help',
-    res: 'Feed command will invoke the method that will show you you the list of content Torean is talking about. Essentially his blog or space to get things off his mind'
+    res: 'This is currently not avail, will be available soon once content is ready',
   },
   bitbucket: {
     cmd: 'bitbucket help',
-    res: 'This will list the private and things he has worked on in the past and commited to BitBucket'
+    res: 'This will list the private and things he has worked on in the past and committed to BitBucket'
   },
   clear: {
     cmd: 'clear',

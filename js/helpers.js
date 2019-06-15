@@ -47,21 +47,38 @@ let EMAIL = {
     isEmailvalid: function(email) {
       const regexTest = /\S+@\S+\.\S+/;
       return regexTest.test(email) ||
-        terminalCallbackMsg(emailMessage.validationErr.email, true);
+        terminalCallbackMsg(EMAIL_MSG.validationErr.email, true);
     },
     isEmailMsgValid: function(emailMsg) {
       return emailMsg !== '' ||
-        terminalCallbackMsg(emailMessage.validationErr.msg, true);
+        terminalCallbackMsg(EMAIL_MSG.validationErr.msg, true);
     }
   },
   send: function(details) {
     if(details) {      
       const email = details[0];
-      const msg = details[1];
+      const msg = details.splice(1,).join(' ').replace(/["']/g, "");
 
       if(EMAIL.validation.isEmailvalid(email) &&
         EMAIL.validation.isEmailMsgValid(msg)) {
-        console.info('send mail to', email, 'with mail message', msg)
+        // sending mail message...
+        terminalCallbackMsg(EMAIL_MSG.sending, false);
+        // update the SMTP and hosting
+        Email.send({
+          SecureToken : "5d01aa18-e880-480b-af79-4f77ee71f7d4",
+          To : "toreanjoel@gmail.com",
+          From : email,
+          Subject : "TrojanMorse, You got mail through your website!",
+          Body : msg
+        }).then(
+          resp => {
+            if(resp === "OK") {
+              terminalCallbackMsg(EMAIL_MSG.success(email), false);
+            } else {
+              terminalCallbackMsg(EMAIL_MSG.error(email, resp), false);
+            }
+          }
+        );
       }
     }
   }
