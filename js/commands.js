@@ -7,15 +7,15 @@
 const COMMANDS = {
   about: {
     cmd: 'about',
-    res: 'RETURN ABOUT RESPONSE - Some nice ASCII would be cool here - maybe trixta icon?'
+    res: HTML_TEMPLATE.ABOUT,
   },
   contact: {
     /**
      * https://www.smtpjs.com/
      */
     cmd: 'contact',
-    // here we need to do the validation checks and responses
-    res: 'RUN METHOD THAT WILL SEND MAIL'
+    res: HTML_TEMPLATE.NEED_PARAMETERS,
+    method: EMAIL.send,
   },
   feed: {
     cmd: 'feed',
@@ -27,18 +27,20 @@ const COMMANDS = {
   },
   help: {
     cmd: 'help',
-    res: 'Below are a list of current supported commands: <br/><br/> - about <br/> - contact<br/> - feed<br/> - bitbucket<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' to get more information regarding the command'
+    res: HTML_TEMPLATE.HELP,
   },
 }
 
+/**
+ * These below need to use the constants
+ */
 const COMMAND_HELP = {
   about: {
     cmd: 'about help',
-    res: 'The about page is displays a small summary about Torean and what he does, where he works ect.'
+    res: 'The about command is displays a small summary about Torean and what he does, where he works ect.'
   },
   contact: {
     cmd: 'contact help',
-    // here we need to do the validation checks and responses
     res: 'To use the contact command, use the following exmaple:<br/><br/><strong>contact your@email.domain \'Your message comes here\'</strong><br/><br/><i>Note the quotation marks around the message</i>'
   },
   feed: {
