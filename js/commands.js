@@ -19,11 +19,12 @@ const COMMANDS = {
   },
   feed: {
     cmd: 'feed',
-    res: 'show the BLOG items or invoke a method that will show the list'
+    res: 'This is currently not avail, will be available soon once content is ready',
   },
   bitbucket: {
     cmd: 'bitbucket',
-    res: 'show the BITBUCKET items or invoke a method that will show the list'
+    res: 'opening BitBucket repository list...',
+    method: BIT_BUCKET.show_repos,
   },
   help: {
     cmd: 'help',

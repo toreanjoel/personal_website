@@ -26,6 +26,10 @@ const DEFAULT = {
 
 // email responses
 const emailMessage = {
+  validationErr: {
+    email: 'Invalid email format. View the command help for more info',
+    msg: 'Invalid email message, make sure to add \'QUOTES\' around your message and don\'t leave blank. View command help for more info',
+  },
   success: function(user) {
     return `Thank you ${user}, you mail was successfully sent`
   },

@@ -8,43 +8,71 @@
   * @param {array} commandParams the full string of what the user typed
   */
 function launchCommand(command, commandParams) {
-  console.info(command, commandParams)
   if(command) {
     if(!commandParams) {
       DOM.TERMINAL_CONTENT_HISTORY.innerHTML +=
       '<div>' + DEFAULT.TERMINAL_INFO + ' ' + command.cmd + '<p>' + command.res + '</p></div>';
+      // check if there is a method
+      if(command.method) {
+        command.method();
+      }
     } else {
       command.method(commandParams);
     }
   } else {
-    DOM.TERMINAL_CONTENT_HISTORY.innerHTML += '<div>' + DEFAULT.TERMINAL_INFO + '<p>' + DOM.TERMINAL_FORM_INPUT.value + ': command not found</p></div>'
+    terminalCallbackMsg(': command not found', true);
   }
 }
 
 /**
- * Helper object containing all the methods to run the email flow
+ * 
+ * @param {string} string string of what you want outputted on the terminal
+ * @param {bool} isResponse if this is true, we want this to be the response with no teminal info
  */
-const EMAIL = {
+function terminalCallbackMsg(string, isResponse = false) {
+  if(!isResponse) {
+    DOM.TERMINAL_CONTENT_HISTORY.innerHTML +=
+    '<p>' + DEFAULT.TERMINAL_INFO + ' ' + string + '</p>';
+  } else {
+    DOM.TERMINAL_CONTENT_HISTORY.innerHTML +=
+      '<div>' + DEFAULT.TERMINAL_INFO + '<p>' + DOM.TERMINAL_FORM_INPUT.value + ' ' + string + '</p></div>'
+  }
+}
+
+/**
+ * list of methods for email
+ */
+let EMAIL = {
   validation: {
     isEmailvalid: function(email) {
       const regexTest = /\S+@\S+\.\S+/;
-      return regexTest.test(email)
+      return regexTest.test(email) ||
+        terminalCallbackMsg(emailMessage.validationErr.email, true);
     },
     isEmailMsgValid: function(emailMsg) {
-      return emailMsg !== '' && true;
+      return emailMsg !== '' ||
+        terminalCallbackMsg(emailMessage.validationErr.msg, true);
     }
   },
   send: function(details) {
-    const email = details[0];
-    const message = details[1];
-    console.info('email address', email, 'messsage', message, 'passed details', details);
-    DOM.TERMINAL_CONTENT_HISTORY.innerHTML +=
-    '<p>' + DEFAULT.TERMINAL_INFO + ' Sending mail... (user: ' + email + ', message: ' + message + ')</p>';
-    // if(this.validation.isEmailvalid(user) && this.validation.isEmailMsgValid(message)) {
-    //   console.info('send mail to', user, 'with mail message', message)
-    // } else {
-    //   // here we tell the user what is wrong
-    //   console.info('make sure the email address is valid and the there is a message to send');
-    // }
+    if(details) {      
+      const email = details[0];
+      const msg = details[1];
+
+      if(EMAIL.validation.isEmailvalid(email) &&
+        EMAIL.validation.isEmailMsgValid(msg)) {
+        console.info('send mail to', email, 'with mail message', msg)
+      }
+    }
   }
+}
+
+/**
+ * list of methods for bitbucket
+ */
+const BIT_BUCKET = {
+  show_repos: function() {
+    window.open(BITBUCKET, '_blank');
+    terminalCallbackMsg('Opened Bitbucket');
+  },
 }
