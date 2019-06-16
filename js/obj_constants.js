@@ -32,7 +32,7 @@ const EMAIL_MSG = {
   },
   sending: 'sending mail...',
   success: function(user) {
-    return `Thank you ${user}, you mail was successfully sent`
+    return `Thank you ${user}, your mail was successfully sent`
   },
   error: function(user, errors) {
     return `Sorry ${user}, something went wrong. <br/> ${errors}`
