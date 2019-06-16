@@ -21,7 +21,7 @@ const HTML_TEMPLATE = {
 
 //default dom Terminal info
 const DEFAULT = {
-  TERMINAL_INFO: `<span class="green">${AGENT}</span> <span class="yellow"> (${USER})</span> <span class="red">#</span>`,
+  TERMINAL_INFO: `<span class="teminal-info-green">${AGENT}</span> <span class="teminal-info-yellow"> (${USER})</span> <span class="teminal-info-red">#</span>`,
 }
 
 // email responses

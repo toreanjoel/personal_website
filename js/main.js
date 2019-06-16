@@ -11,7 +11,7 @@ DOM.TERMINAL_FORM.addEventListener('submit', (event) => {
   event.preventDefault();
   if(DOM.TERMINAL_FORM_INPUT.value.trim() !== '') {
     // here we need to check if they are looking for help or invoking
-    const commandTyped = DOM.TERMINAL_FORM_INPUT.value;
+    const commandTyped = DOM.TERMINAL_FORM_INPUT.value.toLowerCase();
     const commandArray = commandTyped.split(" ");
     if(commandArray.length > 1) {
       if(commandArray[1] === 'help') {
