@@ -40,6 +40,19 @@ function terminalCallbackMsg(string, isResponse = false) {
 }
 
 /**
+ * history object tool containing all items regarding app history
+ */
+let HISTORY = {
+  list: [],
+  create: function(historyItem) {
+    console.info('setting history with', historyItem)
+  },
+  getPrev: function() {
+    console.info('getting prev item in history')
+  }
+}
+
+/**
  * list of methods for email
  */
 let EMAIL = {

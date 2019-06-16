@@ -6,7 +6,7 @@
   /*sizes*/
   --default-spacing: 10px;
   /*fonts*/
-  --default-font: 'Fira Mono', monospace;
+  --default-font: monospace;
   --default-font-size: 16px;
   /*colors*/
   --color-white: #fff;
