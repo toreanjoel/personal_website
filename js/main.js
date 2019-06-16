@@ -27,7 +27,7 @@ DOM.TERMINAL_FORM.addEventListener('submit', (event) => {
   }
   
 
-  if(DOM.TERMINAL_FORM_INPUT.value === 'clear') {
+  if(DOM.TERMINAL_FORM_INPUT.value.toLowerCase() === 'clear') {
     DOM.TERMINAL_CONTENT_HISTORY.innerHTML = '';
   }
 
