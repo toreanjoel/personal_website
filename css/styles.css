@@ -14,9 +14,9 @@
   --color-black: #000;
   --color-bg-main: #090d10;
   /**Terminal info colors**/
-  --color-teminal-info-green: #9ADF3A;
-  --color-teminal-info-yellow: #FFDE38;
-  --color-teminal-info-red: #FF575A;
+  --color-teminal-info-green: #9adf3a;
+  --color-teminal-info-yellow: #ffde38;
+  --color-teminal-info-red: #ff575a;
   --color-teminal-info-blue: #98d7ff;
   --color-terminal-header: #141e2b;
   --color-terminal-body: #182633;
@@ -31,7 +31,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 a {
@@ -74,7 +74,9 @@ body {
   max-height: 100%;
   background: var(--color-terminal-header);
   border-radius: calc(var(--default-spacing) * 0.3);
-  box-shadow: calc(var(--default-spacing) * 0.3) calc(var(--default-spacing) * 0.3) calc(var(--default-spacing) * 0.6) var(--color-black);
+  box-shadow: calc(var(--default-spacing) * 0.3)
+    calc(var(--default-spacing) * 0.3) calc(var(--default-spacing) * 0.6)
+    var(--color-black);
   position: relative;
   display: grid;
   grid-template-rows: calc(var(--default-spacing) * 3) 1fr;
@@ -90,7 +92,8 @@ body {
   top: calc(var(--default-spacing) * 3);
   bottom: 0;
   overflow: auto;
-  padding: calc(var(--default-spacing) * 1.5) calc(var(--default-spacing) * 1.5) 0;
+  padding: calc(var(--default-spacing) * 1.5) calc(var(--default-spacing) * 1.5)
+    0;
   left: 0;
   right: 0;
   background: var(--color-terminal-body);
@@ -120,12 +123,13 @@ body {
   font-size: var(--default-font-size);
 }
 
-#terminal-content > div, #terminal-content p {
+#terminal-content > div,
+#terminal-content p {
   margin: calc(var(--default-spacing)) 0;
 }
 
 #terminal-content b {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 #terminal-content::-webkit-scrollbar {
@@ -133,7 +137,8 @@ body {
 }
 
 #terminal-content::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 calc(var(--default-spacing) * 0.6) var(--color-terminal-body);
+  box-shadow: inset 0 0 calc(var(--default-spacing) * 0.6)
+    var(--color-terminal-body);
 }
 
 #terminal-content::-webkit-scrollbar-thumb {
@@ -148,8 +153,15 @@ body {
   align-self: var(--align-content);
 }
 
-.teminal-info-green { color: var(--color-teminal-info-green); }
-.teminal-info-yellow { color: var(--color-teminal-info-yellow); }
-.teminal-info-red { color: var(--color-teminal-info-red); }
-.teminal-info-blue { color: var(--color-teminal-info-blue);; }
-
+.teminal-info-green {
+  color: var(--color-teminal-info-green);
+}
+.teminal-info-yellow {
+  color: var(--color-teminal-info-yellow);
+}
+.teminal-info-red {
+  color: var(--color-teminal-info-red);
+}
+.teminal-info-blue {
+  color: var(--color-teminal-info-blue);
+}
