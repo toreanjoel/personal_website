@@ -103,11 +103,11 @@ let EMAIL = {
 }
 
 /**
- * list of methods for bitbucket
+ * list of methods for git
  */
-const BIT_BUCKET = {
+const GIT = {
   show_repos: function() {
-    window.open(BITBUCKET, '_blank');
-    terminalCallbackMsg('Opened Bitbucket');
+    window.open(GITHUB_LINK, '_blank');
+    terminalCallbackMsg('Opened GitHub');
   },
 }

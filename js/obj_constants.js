@@ -14,8 +14,21 @@ var DOM = {
 }
 
 const HTML_TEMPLATE = {
-  ABOUT: `<div class="about-image-wrapper"><img src="./images/torean.jpg" /></div><br /><span>Name:</span> Torean Joel - <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a><br /><span>Profession: Software Developer - <a href="${TRIXTA_LINK}" target="_blank">${TRIXTA}</a><br /><br /><u>Who am I:</u><br /><br />I\'m ${DEVELOPER}, a Software Developer.<br /><br />I worked on numerous projects personal and commercial and comfortably find myself working in the visual programming world building out a plaform to help others get into development or not need to worry too much about the struggles and nuances that come with it. While making development fun for developers<br /><br />Other than that, I'm constantly learning and upskilling myself, Hiking, Fun Runs/Walks, Juijitsu and the main meat and potatoes - Chilling watching streaming services (thank the world for Twitch and Youtube)<br /><br />So i'm not much of a super hero but keep an eye on this space, I have some cool things that I will be showing as well as building out projects that hopfully will give others inspiration atleast to enjoy what they do regardless of the space and interest.<br /></span>`,
-  HELP: 'Currently supported commands: <br/><br/> - about <br/> - contact<br/> - feed<br/> - bitbucket<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' <br/> example: about help',
+  ABOUT: `<div class="about-image-wrapper">
+    <img src="./images/torean.jpg" />
+    </div><br />
+    <span>Name:</span> Torean Joel - <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a><br />
+    <span>Profession: Senior Software Developer - <a href="${TRIXTA_LINK}" target="_blank">${TRIXTA}</a><br /><br />
+      <u>Who am I:</u><br /><br />
+      I\'m ${DEVELOPER}, a Senior Software Developer.<br /><br />
+      <u>Main Quest:</u><br /><br />
+      Currently working on building distributed systems that scale and next generation programming language @Trixta to help businesses plan and have core systems through visual planning.<br /><br />
+      <u>Side Quest:</u><br /><br />
+      Constantly reading and upskilling on new technologies, working on projects that will help me progress and support others in their projects. See my <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a> repo for more.<br /><br />
+      <u>Personal Quest:</u><br /><br />
+      Playing games (boardgames, online RTS and ARPG and MMOs), Supporting friends and their streams, Going out with partner on mini marathons. The rest is me spending time taking an interest in other tech.
+    </span>`,
+  HELP: 'Currently supported commands: <br/><br/> - about <br/> - contact<br/> - feed<br/> - github<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' <br/> example: about help',
   NEED_PARAMETERS: 'The \'contact\' command expects parameters, check the \'help\' parameter to get help information',
 }
 
@@ -35,6 +48,6 @@ const EMAIL_MSG = {
     return `Thank you ${user}, your mail was successfully sent`
   },
   error: function(user, errors) {
-    return `Sorry ${user}, something went wrong. <br/> ${errors}`
+    return `Sorry ${user}, something went wrong. <br/> ${errors} - Contact me through other platforms on the "about" page`
   }
 }

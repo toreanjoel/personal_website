@@ -18,10 +18,10 @@ const COMMANDS = {
     cmd: 'feed',
     res: 'This is currently not avail, will be available soon once content is ready',
   },
-  bitbucket: {
-    cmd: 'bitbucket',
-    res: 'opening BitBucket repository list...',
-    method: BIT_BUCKET.show_repos,
+  github: {
+    cmd: 'git',
+    res: 'opening GitHub repository list...',
+    method: GIT.show_repos,
   },
   help: {
     cmd: 'help',
@@ -45,9 +45,9 @@ const COMMAND_HELP = {
     cmd: 'feed help',
     res: 'This is currently not avail, will be available soon once content is ready',
   },
-  bitbucket: {
-    cmd: 'bitbucket help',
-    res: 'This will list the private and things he has worked on in the past and committed to BitBucket'
+  github: {
+    cmd: 'github help',
+    res: 'Github repo for anything being worked on, about to contact and activity and stack'
   },
   clear: {
     cmd: 'clear',
