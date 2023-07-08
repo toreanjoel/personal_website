@@ -11,20 +11,35 @@ const COMMANDS = {
   },
   contact: {
     cmd: 'contact',
-    res: HTML_TEMPLATE.NEED_PARAMETERS,
-    method: EMAIL.send,
+    res: `This is disabled but feel free to contact through <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a> or <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a>`,
+    // method: EMAIL.send,
   },
-  feed: {
-    cmd: 'feed',
-    res: 'This is currently not avail, will be available soon once content is ready',
+  blog: {
+    cmd: 'blog',
+    res: 'opening blog...',
+    method: BLOG.root,
+  },
+  linkedin: {
+    cmd: 'linkedIn',
+    res: 'opening LinkedIn...',
+    method: SOCIAL.linked_in,
   },
   github: {
     cmd: 'git',
     res: 'opening GitHub repository list...',
     method: GIT.show_repos,
   },
+  git: {
+    cmd: 'git',
+    res: 'opening GitHub repository list...',
+    method: GIT.show_repos,
+  },
   help: {
     cmd: 'help',
+    res: HTML_TEMPLATE.HELP,
+  },
+  ls: {
+    cmd: 'ls',
     res: HTML_TEMPLATE.HELP,
   },
 }
@@ -39,18 +54,26 @@ const COMMAND_HELP = {
   },
   contact: {
     cmd: 'contact help',
-    res: 'To use the contact command, use the following exmaple:<br/><br/><strong>contact your@email.domain \'Your message\'</strong><br/><br/><i>Note the quotation marks around the message</i>'
+    res: 'This is disabled but feel free to contact through <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a> or <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a>'
   },
-  feed: {
-    cmd: 'feed help',
-    res: 'This is currently not avail, will be available soon once content is ready',
+  crud: {
+    cmd: 'crud help',
+    res: 'The space where I document and build out projects I am interested in at the time with code and steps how it was made.',
+  },
+  linkedIn: {
+    cmd: 'linkedIn help',
+    res: 'LinkedIn profile and current work and professional history'
   },
   github: {
     cmd: 'github help',
-    res: 'Github repo for anything being worked on, about to contact and activity and stack'
+    res: 'Github repo for anything being worked on.'
+  },
+  git: {
+    cmd: 'git help',
+    res: 'Github repo for anything being worked on.'
   },
   clear: {
     cmd: 'clear',
-    res: 'This will clear the terminal window history on screen'
+    res: 'This will clear the terminal window history on screen.'
   },
 }

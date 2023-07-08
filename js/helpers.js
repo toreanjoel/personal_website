@@ -81,26 +81,15 @@ let EMAIL = {
         const removedQuotes = msg.slice(1,-1);
         // sending mail message...
         terminalCallbackMsg(EMAIL_MSG.sending, false);
-        // update the SMTP and hosting
-        Email.send({
-          SecureToken : "5d01aa18-e880-480b-af79-4f77ee71f7d4",
-          To : "toreanjoel@gmail.com",
-          From : email,
-          Subject : "TrojanMorse, You got mail!",
-          Body : removedQuotes
-        }).then(
-          resp => {
-            if(resp === "OK") {
-              terminalCallbackMsg(EMAIL_MSG.success(email), false);
-            } else {
-              terminalCallbackMsg(EMAIL_MSG.error(email, resp), false);
-            }
-          }
-        );
+        // This needs to change to use leaf node
+        console.log("Add API call to use leafnode for this")
+        return "Please visit 'about' page command to find links to contact me"
       }
     }
   }
 }
+
+// TODO: Need to look into making this more abstract and grouped, they dont need to be separate
 
 /**
  * list of methods for git
@@ -109,5 +98,25 @@ const GIT = {
   show_repos: function() {
     window.open(GITHUB_LINK, '_blank');
     terminalCallbackMsg('Opened GitHub');
+  },
+}
+
+/**
+ * list of methods for blog
+ */
+const BLOG = {
+  root: function() {
+    window.open(CRUD_LINK, '_blank');
+    terminalCallbackMsg('Opened Blog');
+  },
+}
+
+/**
+ * list of methods for SOCIAL
+ */
+const SOCIAL = {
+  linked_in: function() {
+    window.open(LINKEDIN_LINK, '_blank');
+    terminalCallbackMsg('Opened LinkedIn');
   },
 }

@@ -165,3 +165,8 @@ body {
 .teminal-info-blue {
   color: var(--color-teminal-info-blue);
 }
+
+.advert {
+  color: var(--color-teminal-info-yellow);
+  cursor: pointer;
+}

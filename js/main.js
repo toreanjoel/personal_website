@@ -14,7 +14,7 @@ DOM.TERMINAL_FORM.addEventListener('submit', (event) => {
     const commandTyped = DOM.TERMINAL_FORM_INPUT.value.toLowerCase();
     const commandArray = commandTyped.split(" ");
     if(commandArray.length > 1) {
-      if(commandArray[1] === 'help') {
+      if(commandArray[1] === 'help' || commandArray[1] === 'ls') {
         // this get the help content for the help sections
         launchCommand(COMMAND_HELP[commandArray[0]]);
       } else {

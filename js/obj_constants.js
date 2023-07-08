@@ -18,7 +18,8 @@ const HTML_TEMPLATE = {
     <img src="./images/torean.jpg" />
     </div><br />
     <span>Name:</span> Torean Joel - <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a><br />
-    <span>Profession: Senior Software Developer - <a href="${TRIXTA_LINK}" target="_blank">${TRIXTA}</a><br /><br />
+    <span>Profession: Senior Software Developer - <a href="${TRIXTA_LINK}" target="_blank">${TRIXTA}</a><br />
+    <span>Blog: <a href="${CRUD_LINK}" target="_blank">${CRUD}</a><br /><br />
       <u>Who am I:</u><br /><br />
       I\'m ${DEVELOPER}, a Senior Software Developer.<br /><br />
       <u>Main Quest:</u><br /><br />
@@ -28,8 +29,7 @@ const HTML_TEMPLATE = {
       <u>Personal Quest:</u><br /><br />
       Playing games (boardgames, online RTS and ARPG and MMOs), Supporting friends and their streams, Going out with partner on mini marathons. The rest is me spending time taking an interest in other tech.
     </span>`,
-  HELP: 'Currently supported commands: <br/><br/> - about <br/> - contact<br/> - feed<br/> - github<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' <br/> example: about help',
-  NEED_PARAMETERS: 'The \'contact\' command expects parameters, check the \'help\' parameter to get help information',
+  HELP: 'Currently supported commands: <br/><br/> - about <br/> - contact<br/> - blog <br/> - linkedIn <br/> - github<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' <br/> example: about help'
 }
 
 //default dom Terminal info
