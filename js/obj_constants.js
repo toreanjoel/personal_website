@@ -19,7 +19,6 @@ const HTML_TEMPLATE = {
     </div><br />
     <span>Name:</span> Torean Joel - <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a><br />
     <span>Profession: Senior Software Developer - <a href="${TRIXTA_LINK}" target="_blank">${TRIXTA}</a><br />
-    <span>Blog: <a href="${CRUD_LINK}" target="_blank">${CRUD}</a><br /><br />
       <u>Who am I:</u><br /><br />
       I\'m ${DEVELOPER}, a Senior Software Developer.<br /><br />
       <u>Main Quest:</u><br /><br />
