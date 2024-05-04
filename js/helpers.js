@@ -102,16 +102,6 @@ const GIT = {
 }
 
 /**
- * list of methods for blog
- */
-const BLOG = {
-  root: function() {
-    window.open(CRUD_LINK, '_blank');
-    terminalCallbackMsg('Opened Blog');
-  },
-}
-
-/**
  * list of methods for SOCIAL
  */
 const SOCIAL = {

@@ -18,17 +18,18 @@ const HTML_TEMPLATE = {
     <img src="./images/torean.jpg" />
     </div><br />
     <span>Name:</span> Torean Joel - <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a><br />
-    <span>Profession: Senior Software Developer - <a href="${TRIXTA_LINK}" target="_blank">${TRIXTA}</a><br />
+    <span>Software Developer - <a href="${JOB_LINK}" target="_blank">${JOB}</a><br /><br />
       <u>Who am I:</u><br /><br />
       I\'m ${DEVELOPER}, a Senior Software Developer.<br /><br />
       <u>Main Quest:</u><br /><br />
-      Currently working on building distributed systems that scale and next generation programming language @Trixta to help businesses plan and have core systems through visual planning.<br /><br />
+      Currently building out tooling to help protect people from online fraud and identity theft <br /><br />
       <u>Side Quest:</u><br /><br />
       Constantly reading and upskilling on new technologies, working on projects that will help me progress and support others in their projects. See my <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a> repo for more.<br /><br />
+      Chipping away at a side project: <a href="https://leafnode.app" target="_blank">leafnode.app</a> (this may or may not be up). <br /><br />
       <u>Personal Quest:</u><br /><br />
-      Playing games (boardgames, online RTS and ARPG and MMOs), Supporting friends and their streams, Going out with partner on mini marathons. The rest is me spending time taking an interest in other tech.
+      Playing games (boardgames, online RTS and ARPG and MMOs), Supporting friends and their streams, Spending downtime with partnet. The rest is me spending time taking an interest in other tech.
     </span>`,
-  HELP: 'Currently supported commands: <br/><br/> - about <br/> - contact<br/> - blog <br/> - linkedIn <br/> - github<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' <br/> example: about help'
+  HELP: 'Currently supported commands: <br/><br/> - about <br/> - contact <br/> - linkedIn <br/> - github<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' <br/> example: about help'
 }
 
 //default dom Terminal info

@@ -11,14 +11,14 @@ const COMMANDS = {
   },
   contact: {
     cmd: 'contact',
-    res: `This is disabled but feel free to contact through <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a> or <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a>`,
+    res: `This is disabled for now but feel free to contact through <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a> or <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a>`,
     // method: EMAIL.send,
   },
-  blog: {
-    cmd: 'blog',
-    res: 'opening blog...',
-    method: BLOG.root,
-  },
+  // blog: {
+  //   cmd: 'blog',
+  //   res: 'opening blog...',
+  //   method: BLOG.root,
+  // },
   linkedin: {
     cmd: 'linkedIn',
     res: 'opening LinkedIn...',
@@ -55,10 +55,6 @@ const COMMAND_HELP = {
   contact: {
     cmd: 'contact help',
     res: 'This is disabled but feel free to contact through <a href="${LINKEDIN_LINK}" target="_blank">${LINKEDIN}</a> or <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a>'
-  },
-  crud: {
-    cmd: 'crud help',
-    res: 'The space where I document and build out projects I am interested in at the time with code and steps how it was made.',
   },
   linkedIn: {
     cmd: 'linkedIn help',

@@ -4,13 +4,11 @@
 
 
 const DEVELOPER = 'Torean Joel';
-const TRIXTA = "Trixta";
-const TRIXTA_LINK = "https://www.trixta.com/";
+const JOB = "SkimSafe";
+const JOB_LINK = "https://www.skimsafe.se/";
 const LINKEDIN = "LinkedIn";
 const LINKEDIN_LINK = "https://za.linkedin.com/in/torean-joel-62a21054";
 const GITHUB = "GitHub";
 const GITHUB_LINK = "https://github.com/toreanjoel";
-const CRUD = "crud.sh";
-const CRUD_LINK = "https://crud.sh";
 const USER = 'GUEST';
 const AGENT = 'Trojan_Morse';
