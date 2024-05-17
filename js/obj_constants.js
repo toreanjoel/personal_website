@@ -27,7 +27,7 @@ const HTML_TEMPLATE = {
       Constantly reading and upskilling on new technologies, working on projects that will help me progress and support others in their projects. See my <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a> repo for more.<br /><br />
       Chipping away at a side project: <a href="https://leafnode.app" target="_blank">leafnode.app</a> (this may or may not be up). <br /><br />
       <u>Personal Quest:</u><br /><br />
-      Playing games (boardgames, online RTS and ARPG and MMOs), Supporting friends and their streams, Spending downtime with partnet. The rest is me spending time taking an interest in other tech.
+      Playing games (When the time allows), Supporting friends and their streams and ventures, Spending downtime with partner. The rest is me spending time taking an interest in other tech.
     </span>`,
   HELP: 'Currently supported commands: <br/><br/> - about <br/> - contact <br/> - linkedIn <br/> - github<br/> - clear<br/><br/>To get more informaion about the above commands, type \'ONE_OF_THE_ABOVE_COMMANDS help\' <br/> example: about help'
 }
