@@ -4,8 +4,8 @@
 
 
 const DEVELOPER = 'Torean Joel';
-const JOB = "SkimSafe";
-const JOB_LINK = "https://www.skimsafe.se/";
+const JOB = "Trixta";
+const JOB_LINK = "https://www.trixta.ai/";
 const LINKEDIN = "LinkedIn";
 const LINKEDIN_LINK = "https://za.linkedin.com/in/torean-joel-62a21054";
 const GITHUB = "GitHub";
