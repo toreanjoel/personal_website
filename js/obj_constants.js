@@ -25,7 +25,7 @@ const HTML_TEMPLATE = {
       Building out the future, connecting people using AI and distributed systems. <br /><br />
       <u>Side Quest:</u><br /><br />
       Constantly reading and upskilling on new technologies, working on projects that will help me progress and support others in their projects. See my <a href="${GITHUB_LINK}" target="_blank">${GITHUB}</a> repo for more.<br /><br />
-      Chipping away at a side project: [REDACTED] (Let's just call it [Insert aswesome name for custom homelab device] for now). <br /><br />
+      Chipping away at a side project: <a href="https://tunneld.io" target="_blank">tunneld.io</a>.<br /><br />
       <u>Personal Quest:</u><br /><br />
       Playing games (When the time allows), Supporting friends and their streams and ventures, Spending downtime with partner. The rest is me spending time taking an interest in other tech.
     </span>`,
